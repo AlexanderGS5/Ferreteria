@@ -1,7 +1,8 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) session_start();
+if {
+  (session_status() === PHP_SESSION_NONE) session_start(); }
 if (!isset($_SESSION["usuario"])) { header("Location: login.php"); exit; }
-require_once "conexion.php";
+use "conexion.php";
 
 // Obtener productos para el formulario
 $productos = $conn->query("SELECT * FROM productos ORDER BY nombre ASC");
