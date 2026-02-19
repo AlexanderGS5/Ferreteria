@@ -1,8 +1,8 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) session_start();{
 if (!isset($_SESSION["usuario"])) { header("Location: login.php"); exit; }
 require_once "conexion.php";
-
+}
 // Agregar producto
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["agregar"])) {
   $nombre = $conn->real_escape_string($_POST["nombre"] ?? "");
