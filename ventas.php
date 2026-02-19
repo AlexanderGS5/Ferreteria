@@ -86,7 +86,10 @@ $hist = $conn->query("
     <form method="post" class="row g-3">
       <input type="hidden" name="registrar" value="1">
       <div class="col-md-6">
-        <label class="form-label">Producto</label>
+        <label>
+          <input type="text"/>
+          Producto
+        </label>
         <select name="producto_id" class="form-select" required>
           <option value="">Selecciona…</option>
           <?php while($pr = $productos->fetch_assoc()): ?>
