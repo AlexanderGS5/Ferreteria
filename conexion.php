@@ -4,7 +4,7 @@ $user = "root";
 $password = "";
 $dbname = "ferrepos";
 
-$conn = new mysqli($host, $user, $password, $dbname);
+$conn = new mysqli($host, $user, $dbname);
 if ($conn->connect_error) {
   die("Conexión fallida: " . $conn->connect_error);
 }
