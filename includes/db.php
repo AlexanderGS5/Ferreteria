@@ -1,5 +1,5 @@
 <?php
-$conexion = new mysqli("localhost", "root", "", "ferrepos");
+$conexion = new mysqli("localhost", "root", "password", "ferrepos");
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
 }
