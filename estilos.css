@@ -1,0 +1,42 @@
+:root{
+  --bg:#0f172a;          /* azul muy oscuro */
+  --card:#111827;        /* gris azulado */
+  --muted:#94a3b8;       /* gris claro */
+  --primary:#3b82f6;     /* azul */
+  --success:#22c55e;     /* verde */
+  --danger:#ef4444;      /* rojo */
+}
+body{
+  background:linear-gradient(180deg,#0b1221, #0f172a 45%, #0b1221);
+  color:#e5e7eb;
+}
+.navbar{
+  background:rgba(17,24,39,.85)!important;
+  backdrop-filter:saturate(180%) blur(8px);
+}
+.card{
+  background:linear-gradient(180deg,#0e1629,#0b1221);
+  border:1px solid #1f2937;
+  border-radius:16px;
+  box-shadow:0 12px 30px rgba(0,0,0,.35);
+}
+.card .form-control,.card .form-select{
+  background:#0b1221; border:1px solid #1f2937; color:#e5e7eb;
+}
+.card .form-control:focus,.card .form-select:focus{
+  border-color:var(--primary); box-shadow:none;
+}
+.table{
+  --bs-table-bg:#0b1221; --bs-table-color:#e5e7eb;
+  --bs-table-striped-bg:#0e1629; --bs-table-border-color:#1f2937;
+}
+.btn-primary{ background:var(--primary); border-color:var(--primary); }
+.btn-success{ background:var(--success); border-color:var(--success); }
+.btn-outline-light{ color:#e5e7eb; border-color:#334155; }
+.badge-soft{ background:#0e1629; border:1px solid #1f2937; color:#cbd5e1; }
+a{text-decoration:none}
+.header-hero{
+  background:radial-gradient(1200px 500px at 10% -50%,rgba(59,130,246,.25),transparent 60%),
+             radial-gradient(1000px 400px at 90% -40%,rgba(34,197,94,.18),transparent 55%);
+  border-bottom:1px solid #1f2937;
+}
